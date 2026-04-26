@@ -62,14 +62,14 @@ data class Subtype(
          */
         val DEFAULT = Subtype(
             id = -1,
-            primaryLocale = FlorisLocale.from("en", "US"),
+            primaryLocale = FlorisLocale.from("ur", "PK"),
             secondaryLocales = emptyList(),
             nlpProviders = SubtypeNlpProviderMap(),
             composer = extCoreComposer("appender"),
-            currencySet = extCoreCurrencySet("dollar"),
+            currencySet = extCoreCurrencySet("pakistani_rupee"),
             punctuationRule = extCorePunctuationRule("default"),
-            popupMapping = extCorePopupMapping("en"),
-            layoutMap = SubtypeLayoutMap(characters = extCoreLayout("qwerty")),
+            popupMapping = extCorePopupMapping("ur-PK"),
+            layoutMap = SubtypeLayoutMap(characters = extCoreLayout("urdu_phonetic")),
         )
     }
 

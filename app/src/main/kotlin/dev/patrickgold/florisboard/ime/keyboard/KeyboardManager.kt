@@ -932,7 +932,7 @@ class KeyboardManager(context: Context) : InputKeyEventReceiver {
                 localSubtypePresets.addAll(keyboardExtension.subtypePresets)
             }
             localSubtypePresets.sortBy { it.locale.displayName() }
-            for (languageCode in listOf("en-CA", "en-AU", "en-UK", "en-US")) {
+            for (languageCode in listOf("en-US", "ur-PK")) {
                 val index: Int = localSubtypePresets.indexOfFirst { it.locale.languageTag() == languageCode }
                 if (index > 0) {
                     localSubtypePresets.add(0, localSubtypePresets.removeAt(index))
